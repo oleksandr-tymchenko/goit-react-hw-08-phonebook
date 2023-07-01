@@ -10,7 +10,7 @@ import { FormCont, Label, Btn, Input, ErrMessage } from './ContactForm.styled';
 import { useDispatch, useSelector } from 'react-redux';
 import { getContacts } from 'redux/selectors';
 
-import { addContactThunk } from 'redux/thunks';
+import { addContactThunk } from 'redux/contacts/operations';
 
 const schema = yup.object().shape({
   name: yup

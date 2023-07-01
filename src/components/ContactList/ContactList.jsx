@@ -6,7 +6,7 @@ import { getContacts, selectVisibleContacts } from 'redux/selectors';
 
 import Contact from 'components/Contact/Contact';
 import { useEffect } from 'react';
-import { getContactsThunk } from 'redux/thunks';
+import { getContactsThunk } from 'redux/contacts/operations';
 import { ToastContainer } from 'react-toastify';
 import { Loader } from 'components/Loader/Loader';
 

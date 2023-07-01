@@ -2,7 +2,7 @@ import { FilterCont, Input } from './Filter.styled';
 import { useDispatch } from 'react-redux';
 import { useSelector } from 'react-redux';
 import { getFilterValue } from 'redux/selectors';
-import { setFilterValue } from 'redux/filterSlice';
+import { setFilterValue } from 'redux/filter/slice';
 
 export default function Filter() {
   const dispatch = useDispatch();

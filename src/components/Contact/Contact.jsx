@@ -3,7 +3,7 @@ import React from 'react';
 import { useDispatch } from 'react-redux';
 // import { deleteContact } from 'redux/contactsSlise';
 import { Text } from './Contact.styled';
-import { deleteContactThunk } from 'redux/thunks';
+import { deleteContactThunk } from 'redux/contacts/operations';
 
 const Contact = ({ contact }) => {
   const { id, name, phone } = contact;

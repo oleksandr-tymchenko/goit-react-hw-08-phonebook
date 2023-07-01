@@ -4,8 +4,8 @@ import {
   addContactThunk,
   deleteContactThunk,
   getContactsThunk,
-} from './thunks';
-import { contactsInitialState } from './inital';
+} from './operations';
+import { contactsInitialState } from '../inital';
 
 const STATUS = {
   PENDING: 'pending',
