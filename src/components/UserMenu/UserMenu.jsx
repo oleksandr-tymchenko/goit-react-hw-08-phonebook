@@ -1,24 +1,22 @@
 import { useDispatch } from 'react-redux';
-// import { logOut } from 'redux/auth/operations';
 
-import { UserName, Wrapper } from './UserMenu.styled';
+import { UserName, Wrapper, Btn } from './UserMenu.styled';
 import { useAuth } from 'hooks/useAuth';
-// !!! глюк
+import { logOut } from 'redux/auth/operations';
 
 export const UserMenu = () => {
   const dispatch = useDispatch();
   const { user } = useAuth();
   const handleLogOut = () => {
-    console.log('ckick');
-    // dispatch(logOut);
+    dispatch(logOut());
   };
 
   return (
     <Wrapper>
       <UserName>Welcome, {user.name}</UserName>
-      <button type="button" onClick={handleLogOut}>
+      <Btn type="button" onClick={handleLogOut}>
         Logout
-      </button>
+      </Btn>
     </Wrapper>
   );
 };

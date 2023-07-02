@@ -8,7 +8,7 @@ export const ContactsCont = styled.ul`
   width: ${props => props.theme.spacing(110)};
   border: 1px solid #848b60;
   border-radius: ${props => props.theme.spacing(3)};
-  box-shadow: ${({ theme }) => theme.shadows.small};
+  box-shadow: ${({ theme }) => theme.shadows.regular};
 
   padding-left: 40px;
   padding-top: 10px;

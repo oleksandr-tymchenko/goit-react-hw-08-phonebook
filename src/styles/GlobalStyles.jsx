@@ -26,6 +26,9 @@ export const GlobalStyles = css`
   h6,
   p {
     margin-top: 0;
+    ${'' /* box-shadow: ${({ theme }) => theme.shadows.small}; */}
+    ${'' /* text-shadow: ${theme.shadows.small}; */}
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   }
 
   ul,

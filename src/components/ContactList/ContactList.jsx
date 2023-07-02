@@ -12,19 +12,6 @@ import { Loader } from 'components/Loader/Loader';
 
 export default function ContactList() {
   const { isLoading, error } = useSelector(getContacts);
-  // ? код перенесено в селектори
-  // const { items, isLoading, error } = useSelector(getContacts);
-
-  // const filterValue = useSelector(getFilterValue);
-  // const normalizedFilter = filterValue.toLowerCase();
-
-  // const getVisibleContacts = () => {
-  //   return items.filter(contact =>
-  //     contact.name.toLowerCase().includes(normalizedFilter)
-  //   );
-  // };
-
-  //  замысть кода зверху
 
   const visibleContacts = useSelector(selectVisibleContacts);
 

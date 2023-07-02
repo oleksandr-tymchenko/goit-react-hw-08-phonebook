@@ -19,6 +19,7 @@ export const FormCont = styled.div`
 
 export const Label = styled.label`
   margin-top: 10px;
+  box-shadow: ${({ theme }) => theme.shadows.small};
 `;
 
 export const Input = styled(Field)`

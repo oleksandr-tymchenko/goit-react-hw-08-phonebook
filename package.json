@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "https://oleksandr-tymchenko.github.io/goit-react-hw-08-phonebook/",
   "dependencies": {
+    "@chakra-ui/react": "^2.7.1",
     "@emotion/react": "^11.11.0",
     "@emotion/styled": "^11.11.0",
     "@redux-devtools/extension": "^3.2.5",
@@ -13,6 +14,8 @@
     "@testing-library/user-event": "^13.5.0",
     "axios": "^1.4.0",
     "formik": "^2.2.9",
+    "framer": "^2.3.0",
+    "motion": "^10.16.2",
     "nanoid": "^4.0.2",
     "prop-types": "^15.8.1",
     "react": "^18.1.0",

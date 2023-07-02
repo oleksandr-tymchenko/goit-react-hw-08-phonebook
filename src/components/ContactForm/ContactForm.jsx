@@ -20,7 +20,7 @@ const schema = yup.object().shape({
       "Name may contain only letters, apostrophe, dash and spaces. For example Adrian, Jacob Mercer, Charles de Batz de Castelmore d'Artagnan"
     )
     .required(),
-  phone: yup
+  number: yup
     .string()
     .matches(
       /^\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}/,
@@ -31,7 +31,7 @@ const schema = yup.object().shape({
 
 const initialValues = {
   name: '',
-  phone: '',
+  number: '',
 };
 
 export default function ContactForm() {
@@ -64,14 +64,14 @@ export default function ContactForm() {
           <Input type="text" name="name" id="name" placeholder="Jacob Mercer" />
           <ErrMessage name="name" component="div" />
 
-          <Label htmlFor="phone">Phone</Label>
+          <Label htmlFor="number">Phone</Label>
           <Input
             type="tel"
-            name="phone"
-            id="phone"
+            name="number"
+            id="number"
             placeholder="080-111-77-55"
           />
-          <ErrMessage name="phone" component="div" />
+          <ErrMessage name="number" component="div" />
           <Btn type="submit">add contact</Btn>
         </FormCont>
       </Form>

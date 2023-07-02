@@ -1,19 +1,18 @@
 import { BtnDel, Name } from 'components/ContactList/ContactListStyled';
 import React from 'react';
 import { useDispatch } from 'react-redux';
-// import { deleteContact } from 'redux/contactsSlise';
 import { Text } from './Contact.styled';
 import { deleteContactThunk } from 'redux/contacts/operations';
 
 const Contact = ({ contact }) => {
-  const { id, name, phone } = contact;
+  const { id, name, number } = contact;
 
   const dispatch = useDispatch();
   const handleDelete = () => dispatch(deleteContactThunk(id));
 
   return (
     <Text>
-      <Name>{name}:</Name> {phone}
+      <Name>{name}:</Name> {number}
       <BtnDel type="button" onClick={handleDelete}>
         Delete
       </BtnDel>

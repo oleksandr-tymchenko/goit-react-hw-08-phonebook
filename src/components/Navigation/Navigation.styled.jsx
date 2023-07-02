@@ -8,10 +8,10 @@ export const Link = styled(NavLink)`
   font-weight: 700;
   color: #2a363b;
 
-  &:hover {
+  &:active {
     color: #e84a5f;
   }
-  &:active {
+  &:hover {
     color: #e84a5f;
   }
 `;
