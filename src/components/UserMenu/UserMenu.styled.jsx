@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
-import { theme } from 'styles';
+// import { theme } from 'styles';
 
 export const Wrapper = styled.div`
   display: flex;
@@ -9,7 +9,7 @@ export const Wrapper = styled.div`
 export const UserName = styled.p`
   display: flex;
   justify-content: center;
-  font-weight: 700;
+  font-weight: 1000;
   align-items: center;
   margin-bottom: 0;
   font-style: italic;
@@ -20,16 +20,18 @@ export const Btn = styled.button`
   /* margin-left: auto;
   margin-right: auto;
   display: flex; */
-  font-weight: 600;
+  color: black;
+  /* font-weight: 600; */
   justify-content: center;
   align-items: center;
   padding: 6px 10px;
-  background: ${theme.colors.mainBackground};
+  background: white;
   border-radius: ${props => props.theme.spacing(3)};
   box-shadow: ${({ theme }) => theme.shadows.small};
 
   &:hover {
-    background: ${props => props.theme.colors.light};
+    background: grey;
+    /* background: ${props => props.theme.colors.light}; */
     color: ${props => props.theme.colors.accent};
   }
 `;

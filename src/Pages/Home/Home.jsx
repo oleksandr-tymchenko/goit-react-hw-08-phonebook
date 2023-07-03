@@ -6,7 +6,7 @@ export default function Home() {
       <Title>
         Phonebook manager welcome page{' '}
         <span role="img" aria-label="Greeting icon">
-          💁‍♀️
+          👨‍👩‍👧‍👦
         </span>
       </Title>
     </Container>

@@ -10,4 +10,5 @@ export const Input = styled.input`
   height: 25px;
   border-radius: ${props => props.theme.spacing(2)};
   margin-top: 5px;
+  cursor: pointer;
 `;

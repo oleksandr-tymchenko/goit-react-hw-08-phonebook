@@ -25,9 +25,10 @@ export const BtnDel = styled.button`
   border: 1px solid #848b60;
   border-radius: ${props => props.theme.spacing(2)};
   box-shadow: ${({ theme }) => theme.shadows.small};
-
+  background-color: white;
   &:hover {
-    background-color: ${props => props.theme.colors.light};
+    /* background-color: ${props => props.theme.colors.light}; */
+    background-color: yellow;
     color: ${props => props.theme.colors.accent};
   }
 `;

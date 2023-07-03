@@ -16,6 +16,7 @@ export const Input = styled.input`
   height: 20px;
   border-radius: ${props => props.theme.spacing(2)};
   margin-top: 5px;
+  cursor: pointer;
 `;
 
 export const Btn = styled.button`
@@ -25,12 +26,15 @@ export const Btn = styled.button`
   justify-content: center;
   align-items: center;
   padding: 6px 10px;
-  background: ${theme.colors.mainBackground};
+  background: white;
+  color: black;
+  /* background: ${theme.colors.mainBackground}; */
   border-radius: ${props => props.theme.spacing(3)};
   box-shadow: ${({ theme }) => theme.shadows.small};
 
   &:hover {
-    background: ${props => props.theme.colors.light};
+    background: grey;
+    /* background: ${props => props.theme.colors.light}; */
     color: ${props => props.theme.colors.accent};
   }
 `;
