@@ -1,8 +1,8 @@
 {
-  "name": "goit-react-hw-08-phonebook",
+  "name": "rent-service",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://oleksandr-tymchenko.github.io/goit-react-hw-08-phonebook/",
+  "homepage": "https://oleksandr-tymchenko.github.io/rent-service/",
   "dependencies": {
     "@chakra-ui/react": "^2.7.1",
     "@emotion/react": "^11.11.0",
